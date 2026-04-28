@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "code": "def load_csv(file_path):\n    import pandas as pd\n    return pd.read_csv(file_path)",
+        "description": "Reads a CSV file and returns a pandas DataFrame."
+    },
+    {
+        "id": 2,
+        "code": "def connect_to_db(uri):\n    import sqlite3\n    return sqlite3.connect(uri)",
+        "description": "Connects to a SQLite database using the provided URI."
+    },
+    {
+        "id": 3,
+        "code": "def train_model(X, y):\n    from sklearn.ensemble import RandomForestClassifier\n    model = RandomForestClassifier()\n    model.fit(X, y)\n    return model",
+        "description": "Trains a Random Forest classifier on the given data."
+    },
+    {
+        "id": 4,
+        "code": "def get_html(url):\n    import requests\n    response = requests.get(url)\n    return response.text",
+        "description": "Fetches the HTML content of a given URL."
+    },
+    {
+        "id": 5,
+        "code": "def calculate_fibonacci(n):\n    if n <= 1:\n        return n\n    return calculate_fibonacci(n-1) + calculate_fibonacci(n-2)",
+        "description": "Calculates the nth Fibonacci number recursively."
+    },
+    {
+        "id": 6,
+        "code": "def read_json_file(file_path):\n    import json\n    with open(file_path, 'r') as f:\n        return json.load(f)",
+        "description": "Reads a JSON file and parses it into a Python dictionary."
+    },
+    {
+        "id": 7,
+        "code": "def write_to_s3(bucket, key, data):\n    import boto3\n    s3 = boto3.client('s3')\n    s3.put_object(Bucket=bucket, Key=key, Body=data)\n    return True",
+        "description": "Uploads data to an AWS S3 bucket."
+    }
+]
